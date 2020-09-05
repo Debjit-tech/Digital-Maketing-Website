@@ -1,0 +1,127 @@
+.backtotop{
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    margin: 86vh 0 0 92vw;
+    z-index: 1;
+    transition: 0.5s;
+    opacity: 0;
+    transform: translateY(60px);
+}
+.backtotop img{
+    width: 100%;
+}
+
+.backtotop.visible{
+    transform: translateY(0);
+    opacity: 1;
+}
+
+#navbar{
+    background: #10D4FF;
+    padding: 14px 0px;
+}
+
+.limit{
+    max-width: 1400px;
+    margin:auto;
+    display: flex;
+    align-items: center;
+}
+
+.limit_2nd{margin-top: -20px;}
+
+.logo img{width: 240px;transition: 0.5s;}
+
+.navs{
+    width: 100%;
+    text-align: right;
+}
+.list{list-style-type: none;user-select: none;}
+.list li{ display: inline-block;margin-bottom: 12px;user-select: none;}
+.links{
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+    padding: 10px 20px;
+    user-select: none;
+    position: relative;
+}
+
+
+.openscene{
+    background: linear-gradient(#10D4FF,#00ffb3 );
+    clip-path: polygon(0% 0%, 100% 0%, 100% 72%, 50% 95%, 0% 72%);
+    padding-bottom: 40px;
+}
+
+.picture{flex-basis: 50%;}
+.picture img{width: 600px;user-select: none;transition: 0.5s;}
+
+.text{flex-basis: 50%;}
+
+.text p{
+    font-family: saira-sb;
+    font-size: 54px;
+    line-height: 64px;
+    text-transform: uppercase;
+}
+
+.btn{
+    width: 160px;
+    margin-top: 24px;
+    padding: 14px;
+    border: 3px;
+    border-color: black;
+    border-style: solid;
+    text-align: center;
+    user-select: none;
+    position: relative;
+    cursor: pointer;
+}
+.btn a{text-decoration: none;cursor: pointer;}
+
+.btn a p{
+    font-size: 20px;
+    line-height: 20px;
+    transition: 1s;
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+
+.overlay{
+    position: absolute;
+    height: 0;
+    width: 100%;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: -1;
+    background: #eeff54;
+    transition: 0.2s ease-in-out;
+}
+
+
+
+/*----------------------------------------Hover Effects----------------------------------------*/
+
+
+.links:hover{
+    border-bottom-width: 3px;
+    border-color: darkblue;
+    border-style: solid;
+    border-top-width: 0;
+    border-left-width: 0;
+    border-right-width: 0;
+}
+
+.btn:hover .overlay{height: 100%;}
+.btn:hover p{color: rgb(0, 0, 0);}
+
+.picture img:hover{transform: scale(1.1);}
+.logo img:hover{transform: scale(1.2);}
+
+
+
+

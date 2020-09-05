@@ -1,0 +1,121 @@
+#clients{margin: 80px 0;}
+.limit4{
+    max-width: 1100px; 
+    margin:30px auto;
+    display: flex;
+    align-items: center ;
+    box-shadow: grey 0 0 10px;
+    overflow: hidden;
+}
+
+.companies{
+    width: 100%;
+    margin: 100px 0;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 2.5fr 2.5fr 2.5fr 2.5fr;
+    grid-gap: 30px;
+}
+
+
+
+.complogo{
+    padding: 20px;
+}
+
+.complogo img{
+    object-fit: cover;
+    width: 100%;
+    max-height: 100%;
+    filter: grayscale(100);
+    transition: 0.5s;
+}
+
+/*
+.logocontainer{
+            max-width: 1400px;
+            margin: 100px auto;
+            padding: 40px;
+            box-shadow: grey 0 0 10px;
+            display: grid;
+            grid-template-columns: 2.5fr 2.5fr 2.5fr 2.5fr;
+            grid-gap: 30px;
+        }
+
+        .complogo{
+            background: rgb(22, 143, 255);
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .complogo img{
+            object-fit: cover;
+            width: 100%;
+            max-height: 100%;
+        }
+*/
+
+
+.controller{
+    max-width: 1100px;
+    margin: 16px auto;
+    padding: 14px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: grey 0 0 6px;
+}
+
+.leftbtn{
+    width: 2%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.rightbtn{
+    width: 2%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.arrow{width: 100%; filter: grayscale(100);transition: 0.5s;}
+
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+  
+@-webkit-keyframes fade {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+  
+@keyframes fade {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+
+
+/*----------------------------------------Hover Effects----------------------------------------*/
+
+
+
+.complogo img:hover{
+    filter: grayscale(0);
+    transform: scale(1.4);
+}
+
+.arrow:hover{
+    filter: grayscale(0);
+    transform: scale(1.2);
+}

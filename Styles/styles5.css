@@ -1,0 +1,33 @@
+#testimonials{margin: 80px 0;}
+
+.revcontainer{
+    max-width: 1100px;
+    margin: 60px auto;
+    display: flex;
+    align-items: center ;
+    box-shadow: grey 0 0 10px;
+    overflow: hidden;
+}
+
+.revs{
+    width: 100%;
+    padding: 30px;
+}
+
+.row{
+    display: flex;
+    align-items: center;
+}
+.face{width: 8%; display: flex;justify-content: center;flex-basis: 8%;align-items: center;}
+.face img{width: 100%;}
+
+.bio{flex-basis: 70%;margin-left: 20px;}
+.name{font-size: 22px;color: black;}
+.place{font-size: 14px; color: grey; font-style: italic;}
+
+.review{
+    color: black;
+    font-size: 16px;
+    line-height: 18px;
+    margin-top: 30px;
+}

@@ -1,0 +1,50 @@
+.footer{margin: 160px 0 0 0; background: rgb(199, 199, 199);}
+.footercontainer{
+    max-width: 1400px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 2.5fr 2.5fr 2.5fr 2.5fr;
+    grid-gap: 30px;
+    padding: 40px 0;
+}
+
+.head{
+    font-size: 44px;
+    line-height: 44px;
+    color: #1050ff;
+    margin: 0 0 10px 0;
+}
+.social{
+    width: 46%;
+    display: flex;
+    align-items: center;
+    margin: 14px;
+}
+
+.social img{
+    width: 100%;
+    margin: 0 10px 0 0;
+    transition: 0.5s;
+}
+
+.options{display: flex; flex-direction: column;}
+.options a{
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    margin-bottom: 16px;
+}
+
+.resources p{
+    color: black;
+    font-size: 18px;
+    margin-bottom: 16px;
+}
+
+.copyright{
+    background: black;
+    color: white;
+    padding: 40px;
+    text-align: center;
+    font-size: 18px;
+}
